@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <script>
+    var viewport = document.querySelector("meta[name=viewport]");
+viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+  </script>
   <link rel="stylesheet" href="styles/style.css" >
   <link rel="icon" href="resource/Favicon.png" sizes="64x64">
   <title>Log in</title>
