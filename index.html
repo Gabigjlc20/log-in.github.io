@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0, maximun-scale=1.0 user-scalable=no">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" href="resource/Favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="styles/style.css" >
+  <link rel="icon" href="resource/Favicon.png" sizes="64x64">
   <title>Log in</title>
 </head>
-<body>
-  <main class="gradient-pattern">
+<body class="hide-element-on-keyboard">
+  <main class="gradient-pattern hide-element-on-keyboard" >
     <div class="top">
       <a href="sign_up.html">Sign Up</a>
       <h2>Log In</h2>
@@ -34,16 +34,5 @@
     </form>
   </main>
 </body>
-  <script>
-  if(/Android [4-6]/.test(navigator.appVersion)) {
-   window.addEventListener("resize", function() {
-      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
-         window.setTimeout(function() {
-            document.activeElement.scrollIntoViewIfNeeded();
-         },0);
-      }
-   })
-}
-  </script>
 
 </html>
